@@ -3,6 +3,7 @@ import "./globals.css";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
 import { Ubuntu } from "next/font/google";
+import Navbar from "@/components/Navbar";
 
 const ubuntu = Ubuntu({
   subsets:['latin'],
@@ -23,7 +24,8 @@ export default function RootLayout({ children }) {
         <SidebarProvider>
       <AppSidebar/>
       <main className="w-full">
-        <SidebarTrigger side="right"/>
+        <SidebarTrigger />
+        <Navbar/>
         {children}
       </main>
     </SidebarProvider>

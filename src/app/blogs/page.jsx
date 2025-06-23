@@ -69,7 +69,7 @@ const blogItems = [
 
 export default function Blogs(){
     return(
-        <section>
+        <div>
             <div className="grid gap-12 sm:grid-cols-2  lg:grid-cols-3 p-8">
                 {blogItems.map((blog,index)=>(
                     <BlogCard key={index} 
@@ -80,7 +80,7 @@ export default function Blogs(){
                               />
                 ))}
             </div>
-        </section>
+        </div>
     )
 }
 
