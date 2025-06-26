@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Brain, CalendarDays, FilePen, Icon, Layers, Lightbulb, PenTool, Zap } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -13,8 +14,9 @@ export default function Home() {
             <h1 className="text-xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">Where Content, Memories, and Life Converge</h1>
             <p className="text-[12px] sm:text-[14px] md:text-[17px] text-zinc-600">Transform how you create, manage, and relive your entire digital life.
             </p>
+            
             <div className="flex gap-7">
-              <Button variant='secondary' size='lg'>Try It out</Button>
+              <Link href="sign-in"><Button variant='secondary' size='lg'>Try It out</Button></Link>
               <Button variant='destructive' size='lg'>Try It out</Button>
             </div>
           </div>
